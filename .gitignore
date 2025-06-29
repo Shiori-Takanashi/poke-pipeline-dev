@@ -37,3 +37,7 @@ json/raw
 # OS files
 .DS_Store
 Thumbs.db
+
+.venv
+.trash
+json/
