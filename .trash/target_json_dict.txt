@@ -1,8 +1,0 @@
-{
-    "pokemon-species": "/home/shiori/allprojects/azureprojects/poke-pipeline/json/raw/pokemon-species/00878.json",
-    "move": "/home/shiori/allprojects/azureprojects/poke-pipeline/json/raw/move/00878.json",
-    "type": "/home/shiori/allprojects/azureprojects/poke-pipeline/json/raw/type/00001.json",
-    "pokemon-form": "/home/shiori/allprojects/azureprojects/poke-pipeline/json/raw/pokemon-form/00878.json",
-    "pokemon": "/home/shiori/allprojects/azureprojects/poke-pipeline/json/raw/pokemon/00878.json",
-    "ability": "/home/shiori/allprojects/azureprojects/poke-pipeline/json/raw/ability/00217.json"
-}
