@@ -1,0 +1,38 @@
+=== int (5 items) ===
+'accuracy'
+'id'
+'power'
+'pp'
+'priority'
+
+=== str (1 items) ===
+'name'
+
+=== dict (4 items) ===
+'damage_class'
+'generation'
+'target'
+'type'
+
+=== list (3 items) ===
+'flavor_text_entries'
+'learned_by_pokemon'
+'names'
+
+=== empty_list (5 items) ===
+'effect_changes'
+'effect_entries'
+'machines'
+'past_values'
+'stat_changes'
+
+=== none (6 items) ===
+'contest_combos'
+'contest_effect'
+'contest_type'
+'effect_chance'
+'meta'
+'super_contest_effect'
+
+=== other (0 items) ===
+

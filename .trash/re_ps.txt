@@ -1,0 +1,62 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+shiori    125540  0.0  0.0   2800  1096 pts/2    S+   12:55   0:00 sh /mnt/c/Users/ns69a/.vscode/extensions/ms-vscode-remote.remote-wsl-0.99.0/scripts/wslServer.sh 18e3a1ec544e6907be1e944a94c496e302073435 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=41826208-2324740658-4246008081-1018355552 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+shiori    125545  0.0  0.0   2800  1076 pts/2    S+   12:55   0:00 sh /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/bin/code-server --host=127.0.0.1 --port=0 --connection-token=41826208-2324740658-4246008081-1018355552 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+shiori    125539  0.0  0.0   2800  1144 pts/2    Ss+  12:55   0:00 sh -c "$VSCODE_WSL_EXT_LOCATION/scripts/wslServer.sh" 18e3a1ec544e6907be1e944a94c496e302073435 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=41826208-2324740658-4246008081-1018355552 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+shiori    127973  0.0  0.0   8416  4276 pts/8    R+   13:03   0:00 ps aux
+postgres     439  0.0  0.1 220248 10232 ?        Ss   02:32   0:00 postgres: 16/main: walwriter
+postgres     441  0.0  0.0 221828  6624 ?        Ss   02:32   0:00 postgres: 16/main: logical replication launcher
+postgres     286  0.0  0.0 220380  5888 ?        Ss   02:32   0:00 postgres: 16/main: checkpointer
+postgres     287  0.0  0.0 220400  5984 ?        Ss   02:32   0:00 postgres: 16/main: background writer
+postgres     440  0.0  0.1 221844  8268 ?        Ss   02:32   0:00 postgres: 16/main: autovacuum launcher
+root           7  0.0  0.0   2644   156 ?        Sl   02:32   0:00 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+message+     169  0.0  0.0   9624  5268 ?        Ss   02:32   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+syslog       206  0.0  0.0 222508  5516 ?        Ssl  02:32   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         168  0.0  0.0   4236  2796 ?        Ss   02:32   0:00 /usr/sbin/cron -f -P
+root         187  0.0  0.2 1978700 22732 ?       Ssl  02:32   0:00 /usr/libexec/wsl-pro-service -vv
+root          99  0.0  0.0  24124  6264 ?        Ss   02:32   0:01 /usr/lib/systemd/systemd-udevd
+systemd+     160  0.0  0.0  91020  6496 ?        Ssl  02:32   0:00 /usr/lib/systemd/systemd-timesyncd
+systemd+     159  0.0  0.1  21452 12076 ?        Ss   02:32   0:00 /usr/lib/systemd/systemd-resolved
+root         180  0.0  0.1  17976  8276 ?        Ss   02:32   0:00 /usr/lib/systemd/systemd-logind
+root          57  0.0  0.2  66872 18564 ?        S<s  02:32   0:01 /usr/lib/systemd/systemd-journald
+shiori       648  0.0  0.1  20264 11464 ?        Ss   02:32   0:00 /usr/lib/systemd/systemd --user
+postgres     265  0.0  0.3 220248 30804 ?        Ss   02:32   0:00 /usr/lib/postgresql/16/bin/postgres -D /var/lib/postgresql/16/main -c config_file=/etc/postgresql/16/main/postgresql.conf
+polkitd   103372  0.0  0.1 308164  9304 ?        Ssl  11:18   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root         226  0.0  0.2 107024 23224 ?        Ssl  02:32   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         296  0.0  1.0 2354588 82268 ?       Ssl  02:32   0:04 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         218  0.0  0.6 2170724 52948 ?       Ssl  02:32   0:19 /usr/bin/containerd
+root           1  0.0  0.1  21816 13144 ?        Ss   02:32   0:01 /sbin/init
+root         195  0.0  0.0   3160  1156 hvc0     Ss+  02:32   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         217  0.0  0.0   3116  1192 tty1     Ss+  02:32   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root           2  0.0  0.0   2616  1508 ?        Sl   02:32   0:00 /init
+root         577  0.0  0.0   2624   120 ?        Ss   02:32   0:00 /init
+root         579  0.0  0.0   2624   128 ?        S    02:32   0:00 /init
+root      125537  0.0  0.0   2624   124 ?        Ss   12:55   0:00 /init
+root      125538  0.0  0.0   2624   132 ?        S    12:55   0:00 /init
+root      125560  0.0  0.0   2644   124 ?        Ss   12:55   0:00 /init
+root      125561  0.0  0.0   2644   136 ?        S    12:55   0:00 /init
+root      125569  0.0  0.0   2644   124 ?        Ss   12:55   0:00 /init
+root      125570  0.0  0.0   2644   136 ?        S    12:55   0:00 /init
+root      125677  0.0  0.0   2624   124 ?        Ss   12:55   0:00 /init
+root      125678  0.0  0.0   2624   132 ?        S    12:55   0:00 /init
+shiori    126020  0.2  0.9 596000 74496 pts/2    Sl+  12:55   0:01 /home/shiori/allprojects/azureprojects/poke-pipeline/.venv/bin/python /home/shiori/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/run-jedi-language-server.py
+shiori    126555  0.0  0.3  35212 28812 pts/2    S+   12:57   0:00 /home/shiori/allprojects/azureprojects/poke-pipeline/.venv/bin/python /home/shiori/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/lib/jedilsp/jedi/inference/compiled/subprocess/__main__.py /home/shiori/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/lib/jedilsp 3.12.3
+shiori    125965  0.1  0.5 128724 47244 pts/2    Sl+  12:55   0:00 /home/shiori/allprojects/azureprojects/poke-pipeline/.venv/bin/python /home/shiori/.vscode-server/extensions/ms-python.black-formatter-2025.2.0/bundled/tool/lsp_server.py --stdio
+shiori    126011  2.6  7.1 13170952 571860 pts/2 Sl+  12:55   0:12 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node /home/shiori/.vscode-server/extensions/ms-python.vscode-pylance-2025.6.1/dist/server.bundle.js --cancellationReceive=file:692433cb1954ed2b151357df20bb4e4210a52ba284 --node-ipc --clientProcessId=125620
+shiori    125549  0.9  1.3 11823556 107664 pts/2 Sl+  12:55   0:04 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=41826208-2324740658-4246008081-1018355552 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+shiori    125578  0.3  0.9 1082324 79452 pts/2   Sl+  12:55   0:01 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/out/bootstrap-fork --type=ptyHost --logsPath /home/shiori/.vscode-server/data/logs/20250624T125514
+shiori    125593  0.2  0.8 1327516 68252 pts/2   Sl+  12:55   0:01 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/out/bootstrap-fork --type=fileWatcher
+shiori    125871  0.0  0.7 1015136 62396 pts/2   Sl+  12:55   0:00 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=125620
+shiori    125690  0.0  0.6 1012012 52352 pts/7   Sl+  12:55   0:00 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node /home/shiori/.vscode-remote-containers/dist/vscode-remote-containers-server-0.417.0.js
+shiori    125562  0.0  0.7 1019976 63224 pts/3   Ssl+ 12:55   0:00 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node -e const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 45835 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+shiori    125571  0.1  0.6 1012848 52852 pts/4   Ssl+ 12:55   0:00 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node -e const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 45835 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+shiori    125620  4.5  9.7 66142492 781876 pts/2 Sl+  12:55   0:22 /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/node --dns-result-order=ipv4first /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=true
+shiori    125679  0.0  0.0   2800  1068 pts/7    Ss+  12:55   0:00 /bin/sh -c cd '/home/shiori/allprojects/azureprojects/poke-pipeline' && /bin/sh
+shiori    125680  0.0  0.0   2800  1972 pts/7    S+   12:55   0:00 /bin/sh
+shiori    125858  0.0  0.0   2804  1096 pts/7    S+   12:55   0:00 /bin/sh
+root         589  0.0  0.0   6820  4744 pts/1    Ss   02:32   0:00 /bin/login -f
+shiori    125713  0.0  0.0   6304  5580 pts/8    Ss   12:55   0:00 /bin/bash --init-file /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+shiori    125880  0.0  0.0   6304  5576 pts/9    Ss+  12:55   0:00 /bin/bash --init-file /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+shiori    126053  0.0  0.0   6300  5640 pts/5    Ss+  12:55   0:00 /bin/bash --init-file /home/shiori/.vscode-server/bin/18e3a1ec544e6907be1e944a94c496e302073435/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+shiori       583  0.0  0.0   6200  5376 pts/0    Ss+  02:32   0:00 -bash
+shiori       664  0.0  0.0   6204  5376 pts/1    S+   02:33   0:00 -bash
+shiori       649  0.0  0.0  21148  1728 ?        S    02:32   0:00 (sd-pam)

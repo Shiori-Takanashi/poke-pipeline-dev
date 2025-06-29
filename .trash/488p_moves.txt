@@ -1,0 +1,245 @@
+【tackle】 (ID: 33)
+  - versions: legends-arceus
+
+【body-slam】 (ID: 34)
+  - versions: sword-shield, scarlet-violet
+
+【mist】 (ID: 54)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【ice-beam】 (ID: 58)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【psybeam】 (ID: 60)
+  - versions: sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet, scarlet-violet
+
+【aurora-beam】 (ID: 62)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【hyper-beam】 (ID: 63)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【solar-beam】 (ID: 76)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【thunderbolt】 (ID: 85)
+  - versions: scarlet-violet
+
+【thunder-wave】 (ID: 86)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【thunder】 (ID: 87)
+  - versions: scarlet-violet
+
+【toxic】 (ID: 92)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon
+
+【confusion】 (ID: 93)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, legends-arceus, scarlet-violet
+
+【psychic】 (ID: 94)
+  - versions: diamond-pearl, diamond-pearl, platinum, platinum, heartgold-soulsilver, heartgold-soulsilver, black-white, black-white, black-2-white-2, black-2-white-2, x-y, x-y, omega-ruby-alpha-sapphire, omega-ruby-alpha-sapphire, sun-moon, sun-moon, ultra-sun-ultra-moon, ultra-sun-ultra-moon, sword-shield, sword-shield, brilliant-diamond-and-shining-pearl, brilliant-diamond-and-shining-pearl, legends-arceus, scarlet-violet, scarlet-violet
+
+【double-team】 (ID: 104)
+  - versions: diamond-pearl, diamond-pearl, platinum, platinum, heartgold-soulsilver, heartgold-soulsilver, black-white, black-white, black-2-white-2, black-2-white-2, x-y, x-y, omega-ruby-alpha-sapphire, omega-ruby-alpha-sapphire, sun-moon, sun-moon, ultra-sun-ultra-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【recover】 (ID: 105)
+  - versions: legends-arceus
+
+【confuse-ray】 (ID: 109)
+  - versions: scarlet-violet
+
+【light-screen】 (ID: 113)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【reflect】 (ID: 115)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【swift】 (ID: 129)
+  - versions: platinum, heartgold-soulsilver, sword-shield, scarlet-violet
+
+【dream-eater】 (ID: 138)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, brilliant-diamond-and-shining-pearl
+
+【flash】 (ID: 148)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, brilliant-diamond-and-shining-pearl
+
+【rest】 (ID: 156)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【slash】 (ID: 163)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, legends-arceus, scarlet-violet
+
+【substitute】 (ID: 164)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【snore】 (ID: 173)
+  - versions: platinum, heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, sword-shield
+
+【protect】 (ID: 182)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【scary-face】 (ID: 184)
+  - versions: scarlet-violet
+
+【mud-slap】 (ID: 189)
+  - versions: platinum, heartgold-soulsilver, scarlet-violet
+
+【icy-wind】 (ID: 196)
+  - versions: platinum, heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, sword-shield, scarlet-violet
+
+【endure】 (ID: 203)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【swagger】 (ID: 207)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, brilliant-diamond-and-shining-pearl
+
+【fury-cutter】 (ID: 210)
+  - versions: platinum, heartgold-soulsilver
+
+【attract】 (ID: 213)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl
+
+【sleep-talk】 (ID: 214)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【return】 (ID: 216)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon
+
+【frustration】 (ID: 218)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon
+
+【safeguard】 (ID: 219)
+  - versions: diamond-pearl, diamond-pearl, platinum, platinum, heartgold-soulsilver, heartgold-soulsilver, black-white, black-white, black-2-white-2, black-2-white-2, x-y, x-y, omega-ruby-alpha-sapphire, omega-ruby-alpha-sapphire, sun-moon, sun-moon, ultra-sun-ultra-moon, ultra-sun-ultra-moon, sword-shield, sword-shield, brilliant-diamond-and-shining-pearl, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【moonlight】 (ID: 236)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, x-y, omega-ruby-alpha-sapphire, omega-ruby-alpha-sapphire, sun-moon, sun-moon, ultra-sun-ultra-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【hidden-power】 (ID: 237)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon
+
+【rain-dance】 (ID: 240)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【sunny-day】 (ID: 241)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【psych-up】 (ID: 244)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【shadow-ball】 (ID: 247)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【future-sight】 (ID: 248)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet, scarlet-violet
+
+【facade】 (ID: 263)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【helping-hand】 (ID: 270)
+  - versions: platinum, heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, sword-shield, scarlet-violet
+
+【trick】 (ID: 271)
+  - versions: platinum, heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, sword-shield, scarlet-violet
+
+【magic-coat】 (ID: 277)
+  - versions: heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon
+
+【recycle】 (ID: 278)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, brilliant-diamond-and-shining-pearl
+
+【skill-swap】 (ID: 285)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【secret-power】 (ID: 290)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, omega-ruby-alpha-sapphire
+
+【signal-beam】 (ID: 324)
+  - versions: platinum, heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon
+
+【calm-mind】 (ID: 347)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【gravity】 (ID: 356)
+  - versions: heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, scarlet-violet
+
+【natural-gift】 (ID: 363)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver
+
+【psycho-shift】 (ID: 375)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, x-y, omega-ruby-alpha-sapphire, omega-ruby-alpha-sapphire, sun-moon, sun-moon, ultra-sun-ultra-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl
+
+【power-swap】 (ID: 384)
+  - versions: sword-shield
+
+【guard-swap】 (ID: 385)
+  - versions: sword-shield
+
+【power-gem】 (ID: 408)
+  - versions: scarlet-violet
+
+【energy-ball】 (ID: 412)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【giga-impact】 (ID: 416)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【psycho-cut】 (ID: 427)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, x-y, omega-ruby-alpha-sapphire, omega-ruby-alpha-sapphire, sun-moon, sun-moon, ultra-sun-ultra-moon, ultra-sun-ultra-moon, sword-shield, sword-shield, brilliant-diamond-and-shining-pearl, legends-arceus, scarlet-violet
+
+【zen-headbutt】 (ID: 428)
+  - versions: platinum, heartgold-soulsilver, black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, sword-shield, scarlet-violet
+
+【trick-room】 (ID: 433)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【captivate】 (ID: 445)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver
+
+【grass-knot】 (ID: 447)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【charge-beam】 (ID: 451)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【lunar-dance】 (ID: 461)
+  - versions: diamond-pearl, platinum, heartgold-soulsilver, black-white, black-2-white-2, x-y, x-y, omega-ruby-alpha-sapphire, omega-ruby-alpha-sapphire, sun-moon, sun-moon, ultra-sun-ultra-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, scarlet-violet
+
+【psyshock】 (ID: 473)
+  - versions: black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, scarlet-violet
+
+【telekinesis】 (ID: 477)
+  - versions: black-white, black-2-white-2, ultra-sun-ultra-moon
+
+【magic-room】 (ID: 478)
+  - versions: black-2-white-2, omega-ruby-alpha-sapphire, ultra-sun-ultra-moon, sword-shield
+
+【round】 (ID: 496)
+  - versions: black-white, black-2-white-2, x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield
+
+【stored-power】 (ID: 500)
+  - versions: sword-shield, scarlet-violet
+
+【ally-switch】 (ID: 502)
+  - versions: ultra-sun-ultra-moon, sword-shield, scarlet-violet
+
+【moonblast】 (ID: 585)
+  - versions: x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon, sword-shield, brilliant-diamond-and-shining-pearl, legends-arceus, scarlet-violet
+
+【confide】 (ID: 590)
+  - versions: x-y, omega-ruby-alpha-sapphire, sun-moon, ultra-sun-ultra-moon
+
+【dazzling-gleam】 (ID: 605)
+  - versions: scarlet-violet
+
+【psychic-terrain】 (ID: 678)
+  - versions: scarlet-violet
+
+【expanding-force】 (ID: 797)
+  - versions: sword-shield, scarlet-violet
+
+【lunar-blessing】 (ID: 849)
+  - versions: legends-arceus, scarlet-violet
+
+【tera-blast】 (ID: 851)
+  - versions: scarlet-violet

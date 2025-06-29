@@ -1,0 +1,48 @@
+{
+  "accuracy": 100,
+  "damage_class": "physical（move-damage-class/2）",
+  "flavor_text_entries": [
+    {
+      "flavor_text": "The user transforms and crashes to the ground, causing a massive prehistoric explosion. This move's power is boosted more than usual if it’s a supereffective hit.",
+      "language": "en（language/9）",
+      "version_group": "scarlet-violet（version-group/25）"
+    }
+  ],
+  "generation": "generation-ix（generation/9）",
+  "id": 878,
+  "learned_by_pokemon": [
+    "koraidon（pokemon/1007）",
+    "koraidon-limited-build（pokemon/10264）",
+    "koraidon-sprinting-build（pokemon/10265）",
+    "koraidon-swimming-build（pokemon/10266）",
+    "koraidon-gliding-build（pokemon/10267）"
+  ],
+  "name": "collision-course",
+  "names": [
+    {
+      "language": "ja-Hrkt（language/1）",
+      "name": "アクセルブレイク"
+    },
+    {
+      "language": "zh-Hant（language/4）",
+      "name": "全开猛撞"
+    },
+    {
+      "language": "it（language/8）",
+      "name": "Turboschianto"
+    },
+    {
+      "language": "en（language/9）",
+      "name": "Collision Course"
+    },
+    {
+      "language": "ja（language/11）",
+      "name": "アクセルブレイク"
+    }
+  ],
+  "power": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "selected-pokemon（move-target/10）",
+  "type": "fighting（type/2）"
+}
