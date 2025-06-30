@@ -39,5 +39,7 @@ json/raw
 Thumbs.db
 
 .venv
-.trash
+.trash/
 json/
+.env
+.pytest_cache
