@@ -1,4 +1,4 @@
-ALL_ENDPOINTS = {
+{
     "ability": "https://pokeapi.co/api/v2/ability/",
     "berry": "https://pokeapi.co/api/v2/berry/",
     "berry-firmness": "https://pokeapi.co/api/v2/berry-firmness/",
@@ -46,5 +46,5 @@ ALL_ENDPOINTS = {
     "super-contest-effect": "https://pokeapi.co/api/v2/super-contest-effect/",
     "type": "https://pokeapi.co/api/v2/type/",
     "version": "https://pokeapi.co/api/v2/version/",
-    "version-group": "https://pokeapi.co/api/v2/version-group/",
+    "version-group": "https://pokeapi.co/api/v2/version-group/"
 }

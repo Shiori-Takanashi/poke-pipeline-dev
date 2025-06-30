@@ -1,0 +1,53 @@
+./
+├── .git/
+├── .pytest_cache/
+├── .trash/
+├── .venv/
+├── .vscode/
+├── config/
+│   ├── constant.py
+│   ├── dirpath.py
+│   ├── filepath.py
+│   └── target.py
+├── database/
+│   └── poke.db
+├── dev/
+│   └── tree.py
+├── json/
+│   ├── ability/
+│   ├── move/
+│   ├── pokemon/
+│   ├── pokemon-form/
+│   ├── pokemon-species/
+│   └── type/
+├── meta/
+│   ├── map_endpoints.json
+│   ├── map_form.json
+│   ├── map_pokemon.json
+│   ├── map_species.json
+│   └── map_spf.json
+├── out/
+│   └── tree.txt
+├── src/
+│   ├── extract/
+│   │   ├── flavor_text.py
+│   │   ├── strip_url.py
+│   │   └── transform.py
+│   ├── fetch/
+│   │   ├── fetch_endpoints.py
+│   │   └── fetch_target.py
+│   └── mapping/
+│       ├── json_mapping.py
+│       └── spf_mapping.py
+├── tests/
+│   └── test_paths_json.py
+├── util/
+│   ├── directory.py
+│   ├── io_json.py
+│   ├── language.py
+│   ├── logger.py
+│   ├── paths_json.py
+│   └── process_idx.py
+├── .env
+├── .gitignore
+└── requirements-test.txt

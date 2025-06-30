@@ -8,9 +8,9 @@ from tqdm import tqdm
 import aiofile
 import json
 
-from config.paths_anchor import JSON_DIR_PATH
-from constants.target_names import FETCH_TARGET
-from constants.base_url import BASE_URL
+from config.anchor_config import BASE_URL, JSON_DIR_PATH, META_DIR_PATH
+from config.target import FETCH_TARGET
+from config.anchor_config import DEV_DIR_PATH
 
 
 def get_name_and_url(base_url: str, fetch_target: List):
@@ -98,7 +98,9 @@ async def fetch_endpoint_for_data(
 
 if __name__ == "__main__":
     names, urls = get_name_and_url(BASE_URL, FETCH_TARGET)
-    results = asyncio.run(fetch_all(urls, names))
-    print(f"Saved {len(results)} JSON files")
-    failed = sum(1 for r in results if r is None)
-    print(f"Failed {failed} JSON files.")
+    # results = asyncio.run(fetch_all(urls, names))
+    # print(f"Saved {len(results)} JSON files")
+    # failed = sum(1 for r in results if r is None)
+    # print(f"Failed {failed} JSON files.")
+    name_and_url = [f"{name}: {url}" for name, url in zip(names, urls)]
+    print("\n".join(name_and_url))
