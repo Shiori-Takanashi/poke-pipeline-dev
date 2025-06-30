@@ -8,12 +8,24 @@ from tqdm import tqdm
 import aiofile
 import json
 
-from config.anchor_config import BASE_URL, JSON_DIR_PATH, META_DIR_PATH
+from config.constant import BASE_URL, SEMAPHORE_INT, RETRYS_INT, TIMEOUT_INT
 from config.target import FETCH_TARGET
-from config.anchor_config import DEV_DIR_PATH
+from config.dirpath import JSON_DIR_PATH
+
+from util.re_endpoint_name import rename_endpoint_name
+from util.directory import json_dir_maker_from_name
 
 
-def get_name_and_url(base_url: str, fetch_target: List):
+def setup_dir(names: List[str] = FETCH_TARGET) -> None:
+    for name in names:
+        json_dir_maker_from_name(name)
+
+
+def get_name_and_url(base_url: str = BASE_URL, fetch_target: List = FETCH_TARGET):
+    """
+    configからendpoint-nameとendpoint-urlを構築。
+    引数はデフォルト指定してある。省略することを推奨。
+    """
     names = []
     urls = []
     for target in fetch_target:
@@ -23,8 +35,10 @@ def get_name_and_url(base_url: str, fetch_target: List):
     return names, urls
 
 
-async def fetch_all(urls: List[str], names: List[str]):
-    semaphore = asyncio.Semaphore(50)
+async def fetch_all(
+    urls: List[str], names: List[str], semaphore_int: int = SEMAPHORE_INT
+):
+    semaphore = asyncio.Semaphore(semaphore_int)
     async with aiohttp.ClientSession() as session:
         tasks_for_idxes = [
             fetch_endpoint_for_idxes(url, name, semaphore, session)
@@ -54,8 +68,8 @@ async def fetch_json_with_retry(
     url: str,
     session: aiohttp.ClientSession,
     semaphore: asyncio.Semaphore,
-    retries: int = 5,
-    timeout: int = 10,
+    retries: int = RETRYS_INT,
+    timeout: int = TIMEOUT_INT,
     name: str = "",
 ) -> dict | None:
     async with semaphore:
@@ -81,12 +95,12 @@ async def fetch_endpoint_for_idxes(url: str, name: str, semaphore, session):
 async def fetch_endpoint_for_data(
     url: str, name: str, idx: str, semaphore, session
 ) -> str | None:
-    target_url = f"{url}{idx}/"
+    target_url = f"{url}/{idx}/"
     data = await fetch_json_with_retry(target_url, session, semaphore, name=name)
     if data is None:
         return None
 
-    output_dir = JSON_DIR_PATH / name
+    output_dir = JSON_DIR_PATH / rename_endpoint_name(name)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     filename = output_dir / f"{int(idx):05d}.json"
@@ -97,10 +111,10 @@ async def fetch_endpoint_for_data(
 
 
 if __name__ == "__main__":
+    setup_dir()
     names, urls = get_name_and_url(BASE_URL, FETCH_TARGET)
-    # results = asyncio.run(fetch_all(urls, names))
-    # print(f"Saved {len(results)} JSON files")
-    # failed = sum(1 for r in results if r is None)
-    # print(f"Failed {failed} JSON files.")
-    name_and_url = [f"{name}: {url}" for name, url in zip(names, urls)]
-    print("\n".join(name_and_url))
+    results = asyncio.run(fetch_all(urls, names))
+    print(f"Saved {len(results)} JSON files")
+    failed = sum(1 for r in results if r is None)
+    print(f"Failed {failed} JSON files.")
+    print("\n".join(names))

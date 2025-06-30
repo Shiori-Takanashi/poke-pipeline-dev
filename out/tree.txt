@@ -10,7 +10,9 @@
 │   ├── filepath.py
 │   └── target.py
 ├── database/
-│   └── poke.db
+│   └── poke.sqlite3
+├── debug/
+│   └── debug_fetch_target.py
 ├── dev/
 │   └── tree.py
 ├── json/
@@ -19,7 +21,11 @@
 │   ├── pokemon/
 │   ├── pokemon-form/
 │   ├── pokemon-species/
-│   └── type/
+│   ├── pokemon_form/
+│   ├── pokemon_species/
+│   ├── type/
+│   ├── version/
+│   └── version_group/
 ├── meta/
 │   ├── map_endpoints.json
 │   ├── map_form.json
@@ -36,18 +42,24 @@
 │   ├── fetch/
 │   │   ├── fetch_endpoints.py
 │   │   └── fetch_target.py
-│   └── mapping/
-│       ├── json_mapping.py
-│       └── spf_mapping.py
+│   ├── mapping/
+│   │   ├── json_mapping.py
+│   │   └── spf_mapping.py
+│   ├── pathing/
+│   │   └── paths_json.py
 ├── tests/
-│   └── test_paths_json.py
+│   ├── test_fetch_target.py
+│   ├── test_paths_json.py
+│   └── test_re_endpoint_name.py
+├── tests_out/
 ├── util/
 │   ├── directory.py
 │   ├── io_json.py
 │   ├── language.py
 │   ├── logger.py
-│   ├── paths_json.py
-│   └── process_idx.py
+│   ├── process_idx.py
+│   └── re_endpoint_name.py
 ├── .env
 ├── .gitignore
-└── requirements-test.txt
+├── requirements-test.txt
+└── requirements.txt

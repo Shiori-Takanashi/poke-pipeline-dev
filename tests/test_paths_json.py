@@ -4,7 +4,6 @@ import sys
 from pathlib import Path
 import pytest
 
-# プロジェクトルートを sys.path に追加（import 解決用）
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from config.dirpath import JSON_DIR_PATH
