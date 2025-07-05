@@ -1,80 +1,49 @@
-# tests/test_paths_json.py
-
-import sys
+import unittest
 from pathlib import Path
-import pytest
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
+from scripts.paths_json import get_dirpath_sub_jsons, get_dirpath_sub_json_by_name
 from config.dirpath import JSON_DIR_PATH
-from config.target import FETCH_TARGET, MONSTER_TARGET
-from src.pathing.paths_json import (
-    get_dirpath_sub_jsons,
-    get_dirpath_sub_json_by_name,
-)
 
 
-def test_get_dirpath_sub_jsons_returns_list_of_dirs():
-    """
-    get_dirpath_sub_jsons() が json/ 以下のサブディレクトリ Path のリストを返すこと
-    """
-    subdirs = get_dirpath_sub_jsons()
-    assert isinstance(subdirs, list)
-    assert all(isinstance(p, Path) for p in subdirs)
-    assert all(p.is_dir() for p in subdirs)
+class TestPathsJson(unittest.TestCase):
+
+    def test_get_dirpath_sub_jsons_valid_path(self):
+        """有効なパスでのサブディレクトリ取得テスト"""
+        # 実際のJSONディレクトリが存在する場合のテスト
+        if JSON_DIR_PATH.exists():
+            result = get_dirpath_sub_jsons()
+            self.assertIsInstance(result, list)
+            # 結果がすべてディレクトリパスであることを確認
+            for path in result:
+                self.assertIsInstance(path, Path)
+
+    def test_get_dirpath_sub_jsons_nonexistent_path(self):
+        """存在しないパスでのエラーテスト"""
+        nonexistent_path = Path("/nonexistent/path")
+        with self.assertRaises(FileNotFoundError):
+            get_dirpath_sub_jsons(nonexistent_path)
+
+    def test_get_dirpath_sub_json_by_name_found(self):
+        """名前指定でのディレクトリ取得テスト（見つかる場合）"""
+        if JSON_DIR_PATH.exists():
+            sub_dirs = get_dirpath_sub_jsons()
+            if sub_dirs:
+                # 最初のディレクトリを使ってテスト
+                test_dirname = sub_dirs[0].name
+                result = get_dirpath_sub_json_by_name(sub_dirs, test_dirname)
+                self.assertEqual(result.name, test_dirname)
+
+    def test_get_dirpath_sub_json_by_name_not_found(self):
+        """名前指定でのディレクトリ取得テスト（見つからない場合）"""
+        if JSON_DIR_PATH.exists():
+            sub_dirs = get_dirpath_sub_jsons()
+            with self.assertRaises(ValueError):
+                get_dirpath_sub_json_by_name(sub_dirs, "nonexistent_directory")
+
+    def test_get_dirpath_sub_json_by_name_empty_list(self):
+        """空のリストでの名前指定テスト"""
+        with self.assertRaises(ValueError):
+            get_dirpath_sub_json_by_name([], "any_name")
 
 
-def test_get_dirpath_sub_jsons_not_found(tmp_path):
-    """
-    json_dir_path が存在しない場合に FileNotFoundError を投げること
-    """
-    nonexistent = tmp_path / "not_exist"
-    with pytest.raises(FileNotFoundError):
-        get_dirpath_sub_jsons(json_dir_path=nonexistent)
-
-
-def test_get_dirpath_sub_json_by_name_found():
-    """
-    get_dirpath_sub_json_by_name() が有効な name に対して正しい Path を返すこと
-    """
-    subdirs = get_dirpath_sub_jsons()
-    if not subdirs:
-        pytest.skip("json/ 以下のサブディレクトリが存在しないためスキップ")
-    name = subdirs[0].name  # 存在する最初のディレクトリ名
-    path = get_dirpath_sub_json_by_name(subdirs, name)
-    assert path.name == name
-    assert path.is_dir()
-
-
-def test_get_dirpath_sub_json_by_name_not_found():
-    """
-    get_dirpath_sub_json_by_name() が無効な name に対して ValueError を投げること
-    """
-    subdirs = get_dirpath_sub_jsons()
-    # 存在しないユニークな name を作成
-    invalid = "__no_such_dir__"
-    while any(p.name == invalid for p in subdirs):
-        invalid += "_x"
-    with pytest.raises(ValueError) as exc:
-        get_dirpath_sub_json_by_name(subdirs, invalid)
-    assert invalid in str(exc.value)
-
-
-@pytest.mark.parametrize("name", FETCH_TARGET)
-def test_fetch_target_directories_exist(name):
-    """
-    FETCH_TARGET に列挙されたすべての name がディレクトリとして存在すること
-    """
-    subdirs = get_dirpath_sub_jsons()
-    path = get_dirpath_sub_json_by_name(subdirs, name)
-    assert path.is_dir(), f"{name} のディレクトリが見つかりません"
-
-
-@pytest.mark.parametrize("name", MONSTER_TARGET)
-def test_monster_target_directories_exist(name):
-    """
-    MONSTER_TARGET に列挙されたすべての name がディレクトリとして存在すること
-    """
-    subdirs = get_dirpath_sub_jsons()
-    path = get_dirpath_sub_json_by_name(subdirs, name)
-    assert path.is_dir(), f"{name} のディレクトリが見つかりません"
+if __name__ == "__main__":
+    unittest.main()

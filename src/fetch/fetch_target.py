@@ -2,11 +2,11 @@
 from __future__ import annotations
 import asyncio
 import aiohttp
-import sqlite3
 from typing import List, Tuple
 from tqdm import tqdm
 import aiofile
 import json
+import sys
 
 from config.constant import BASE_URL, SEMAPHORE_INT, RETRYS_INT, TIMEOUT_INT
 from config.target import FETCH_TARGET
@@ -14,11 +14,15 @@ from config.dirpath import JSON_DIR_PATH
 
 from util.re_endpoint_name import rename_endpoint_name
 from util.directory import json_dir_maker_from_name
+from scripts.logger_demo import setup_demo_logger
+
+logger = setup_demo_logger(__name__)
 
 
-def setup_dir(names: List[str] = FETCH_TARGET) -> None:
+def setup_sub_dir(names: List[str] = FETCH_TARGET) -> None:
     for name in names:
-        json_dir_maker_from_name(name)
+        dirname = f"raw_{name}"
+        json_dir_maker_from_name(dirname)
 
 
 def get_name_and_url(base_url: str = BASE_URL, fetch_target: List = FETCH_TARGET):
@@ -40,17 +44,17 @@ async def fetch_all(
 ):
     semaphore = asyncio.Semaphore(semaphore_int)
     async with aiohttp.ClientSession() as session:
-        tasks_for_idxes = [
-            fetch_endpoint_for_idxes(url, name, semaphore, session)
+        tasks_for_indices = [
+            fetch_endpoint_for_indices(url, name, semaphore, session)
             for url, name in zip(urls, names)
         ]
-        idxes_of_endpoints = await asyncio.gather(*tasks_for_idxes)
+        indices_of_endpoints = await asyncio.gather(*tasks_for_indices)
 
         tasks_for_data = []
-        for url, name, idxes in zip(urls, names, idxes_of_endpoints):
-            if idxes is None:
+        for url, name, indices in zip(urls, names, indices_of_endpoints):
+            if indices is None:
                 continue
-            for idx in idxes:
+            for idx in indices:
                 tasks_for_data.append(
                     fetch_endpoint_for_data(url, name, idx, semaphore, session)
                 )
@@ -84,7 +88,7 @@ async def fetch_json_with_retry(
         return None
 
 
-async def fetch_endpoint_for_idxes(url: str, name: str, semaphore, session):
+async def fetch_endpoint_for_indices(url: str, name: str, semaphore, session):
     full_url = f"{url}?limit=3000/"
     data = await fetch_json_with_retry(full_url, session, semaphore, name=name)
     if data is None:
@@ -100,8 +104,11 @@ async def fetch_endpoint_for_data(
     if data is None:
         return None
 
-    output_dir = JSON_DIR_PATH / rename_endpoint_name(name)
-    output_dir.mkdir(parents=True, exist_ok=True)
+    output_dir = JSON_DIR_PATH / f"raw_{rename_endpoint_name(name)}"
+
+    if not output_dir.exists():
+        logger.debug(f"JSONディレクトリが存在しません。初期化が正しくありません。")
+        sys.exit(1)
 
     filename = output_dir / f"{int(idx):05d}.json"
     async with aiofile.AIOFile(str(filename), "w") as af:
@@ -111,7 +118,7 @@ async def fetch_endpoint_for_data(
 
 
 if __name__ == "__main__":
-    setup_dir()
+    setup_sub_dir()
     names, urls = get_name_and_url(BASE_URL, FETCH_TARGET)
     results = asyncio.run(fetch_all(urls, names))
     print(f"Saved {len(results)} JSON files")

@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /home/shiori/allprojects/azureprojects/poke-pipeline/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/shiori/allprojects/azureprojects/poke-pipeline
+plugins: asyncio-1.0.0, typeguard-4.4.4
+asyncio: mode=Mode.STRICT, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 9 items
+
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_successful_indices_extraction PASSED [ 11%]
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_url_parsing_edge_cases PASSED [ 22%]
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_empty_results PASSED [ 33%]
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_fetch_failure PASSED [ 44%]
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_malformed_response PASSED [ 55%]
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_malformed_url_in_results PASSED [ 66%]
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_different_endpoints PASSED [ 77%]
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_large_indices PASSED [ 88%]
+tests/test_fetch_endpoint_for_indices.py::TestFetchEndpointForIndices::test_url_construction PASSED [100%]
+
+============================== 9 passed in 0.33s ===============================

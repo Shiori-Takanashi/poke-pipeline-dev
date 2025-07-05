@@ -26,7 +26,7 @@ from src.fetch.fetch_target import (
     get_name_and_url,
     fetch_all,
     fetch_json_with_retry,
-    fetch_endpoint_for_idxes,
+    fetch_endpoint_for_indices,
     fetch_endpoint_for_data,
 )
 

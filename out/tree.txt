@@ -12,9 +12,30 @@
 ├── database/
 │   └── poke.sqlite3
 ├── debug/
-│   └── debug_fetch_target.py
+│   ├── debug_fetch_target.py
+│   └── debug_syspath.py
 ├── dev/
 │   └── tree.py
+├── docs/
+│   ├── _config/
+│   ├── _debug/
+│   ├── _meta/
+│   ├── _scripts/
+│   │   ├── _json_mapping.md
+│   │   ├── _paths_json.md
+│   │   ├── _spf_mapping.md
+│   │   └── README.md
+│   ├── _src/
+│   └── _trash/
+│       ├── _README.md
+│       ├── config-directory.md
+│       ├── database-directory.md
+│       ├── json-directory.md
+│       ├── meta-directory.md
+│       ├── other-directories.md
+│       ├── src-directory.md
+│       ├── tests-directory.md
+│       └── util-directory.md
 ├── json/
 │   ├── ability/
 │   ├── move/
@@ -27,13 +48,25 @@
 │   ├── version/
 │   └── version_group/
 ├── meta/
+│   ├── ability.py
 │   ├── map_endpoints.json
-│   ├── map_form.json
-│   ├── map_pokemon.json
-│   ├── map_species.json
-│   └── map_spf.json
+│   ├── move.py
+│   ├── pokemon-form.py
+│   ├── pokemon-species.py
+│   ├── pokemon.py
+│   ├── pokemon_form.py
+│   ├── pokemon_species.py
+│   ├── spf_map.py
+│   ├── type.py
+│   ├── version.py
+│   └── version_group.py
 ├── out/
+│   ├── syspath.txt
 │   └── tree.txt
+├── scripts/
+│   ├── json_mapping.py
+│   ├── paths_json.py
+│   └── spf_mapping.py
 ├── src/
 │   ├── extract/
 │   │   ├── flavor_text.py
@@ -42,16 +75,12 @@
 │   ├── fetch/
 │   │   ├── fetch_endpoints.py
 │   │   └── fetch_target.py
-│   ├── mapping/
-│   │   ├── json_mapping.py
-│   │   └── spf_mapping.py
-│   ├── pathing/
-│   │   └── paths_json.py
 ├── tests/
 │   ├── test_fetch_target.py
+│   ├── test_json_mapping.py
 │   ├── test_paths_json.py
-│   └── test_re_endpoint_name.py
-├── tests_out/
+│   ├── test_re_endpoint_name.py
+│   └── test_spf_mapping.py
 ├── util/
 │   ├── directory.py
 │   ├── io_json.py
@@ -61,5 +90,6 @@
 │   └── re_endpoint_name.py
 ├── .env
 ├── .gitignore
+├── README.md
 ├── requirements-test.txt
 └── requirements.txt

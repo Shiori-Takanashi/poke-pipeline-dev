@@ -2,14 +2,29 @@ from pathlib import Path
 import json
 from typing import List, Dict, Any
 
-from config.paths_anchor import DEV_DIR_PATH
-from constants.pokemon_species import SPECIES
-from constants.pokemon import POKEMON
-from constants.pokemon_form import FORM
-from config.paths_json import SPECIE_DIR_PATH, POKEMON_DIR_PATH, FORM_DIR_PATH
+from config.dirpath import DEV_DIR_PATH, META_DIR_PATH, JSON_DIR_PATH
+from util.io_json import read_json
+from util.process_idx import extract_idx_from_url
 
-from src.util.io_json import read_json
-from src.util.extract_from_data import extract_idx_from_url
+
+# 定数ファイルの代わりにjsonディレクトリから直接参照
+def get_json_files_mapping(subdir: str) -> Dict[str, str]:
+    """指定されたサブディレクトリのJSONファイルのマッピングを取得"""
+    dir_path = JSON_DIR_PATH / subdir
+    if not dir_path.exists():
+        return {}
+    return {path.stem.zfill(5): path.name for path in dir_path.glob("*.json")}
+
+
+# 実際のディレクトリパス
+SPECIE_DIR_PATH = JSON_DIR_PATH / "pokemon_species"
+POKEMON_DIR_PATH = JSON_DIR_PATH / "pokemon"
+FORM_DIR_PATH = JSON_DIR_PATH / "pokemon_form"
+
+# マッピング辞書を動的に作成
+SPECIES = get_json_files_mapping("pokemon_species")
+POKEMON = get_json_files_mapping("pokemon")
+FORM = get_json_files_mapping("pokemon_form")
 
 
 class MonsterMap:
@@ -74,9 +89,8 @@ if __name__ == "__main__":
     triples = mm.process_all(target_species)
     SPF_MAP = mm.make_spf_map(triples)
 
-    out_path = DEV_DIR_PATH / "spf_map.py"
+    out_path = META_DIR_PATH / "spf_map.py"
     with open(out_path, "w", encoding="utf-8") as fp:
-        fp.write("# auto-generated SPF_MAP\n\n")
         # 順序を気にしない：キーはアルファベット順に整列
         fp.write("SPF_MAP = ")
         fp.write(json.dumps(SPF_MAP, ensure_ascii=False, indent=2, sort_keys=True))

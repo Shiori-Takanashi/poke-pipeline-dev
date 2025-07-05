@@ -8,8 +8,6 @@ from cli.util.version import extract_version_id
 from cli.util.io import write_json
 from cli.util.logger import get_logger
 
-logger = get_logger(__name__)
-
 
 def latest_flavor_text(entries: List[Dict]) -> Dict[str, str]:
     result, latest = {}, -1
