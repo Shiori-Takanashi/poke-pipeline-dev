@@ -1,4 +1,4 @@
-{
+ENDPOINTS = {
     "ability": "https://pokeapi.co/api/v2/ability/",
     "berry": "https://pokeapi.co/api/v2/berry/",
     "berry-firmness": "https://pokeapi.co/api/v2/berry-firmness/",
